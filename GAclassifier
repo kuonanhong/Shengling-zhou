@@ -113,10 +113,7 @@ Trans=Es./Er;
 Trans=Trans(start:term);
 freq=freq(start:term);
 Magnitude=abs(Trans);
-LM=log(Magnitude);
-phase=-unwrap(angle(Trans));
-p=mapminmax(phase',0,1);
-v=[p,LM']';
+v=log(Magnitude);
 f=freq;
 end % end of function getVector 
 
